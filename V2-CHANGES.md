@@ -6,7 +6,7 @@ This branch rebuilds the pack to the Snow Packs v2 bar (see [`COCO-V2-INSTRUCTIO
 
 ### App shell (new)
 - **Before:** a Streamlit title, a warning banner and a sidebar button.
-- **After:** a branded top bar (Ferrovane Corridor Desk logo, Sample/Live switch, environment badge, role chip) and five tabs. Tokens, fonts and motion follow [`docs/DESIGN.md`](docs/DESIGN.md).
+- **After:** a branded top bar (Cross-Border & FX logo, Sample/Live switch, environment badge, role chip) and five tabs. Tokens, fonts and motion follow [`docs/DESIGN.md`](docs/DESIGN.md).
 - **Why:** v2 asks for a commercial-looking product with an always-visible mode switch. The old app had no Sample mode; it needed a Snowflake session to start.
 
 ### Desk (new)

@@ -1,4 +1,4 @@
-"""Ferrovane brand: tokens from docs/DESIGN.md, global CSS and small HTML helpers."""
+"""Cross-Border & FX brand: tokens from docs/DESIGN.md, global CSS and small HTML helpers."""
 import html
 
 T = {
@@ -16,7 +16,7 @@ PAIR_COLORS = {
 LOGO = """<svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0B2E28" stroke="#2C5A50"/><path d="M7 22 C 11 9, 21 9, 25 22" fill="none" stroke="#F2B544" stroke-width="2.4" stroke-linecap="round"/><path d="M21.5 19.5 L25 22 L26.4 17.9" fill="none" stroke="#F2B544" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="22" r="2.2" fill="#E9F2EE"/><path d="M16 6 V 26" stroke="#E9F2EE" stroke-width="1.4" stroke-opacity=".45"/></svg>"""
 
 import base64 as _b64
-LOGO_IMG = ('<img alt="Ferrovane logo" width="30" height="30" src="data:image/svg+xml;base64,'
+LOGO_IMG = ('<img alt="Cross-Border & FX logo" width="30" height="30" src="data:image/svg+xml;base64,'
             + _b64.b64encode(LOGO.replace('aria-hidden="true"', 'xmlns="http://www.w3.org/2000/svg"').encode()).decode() + '">')
 
 CSS = """

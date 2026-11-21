@@ -41,8 +41,8 @@ def theme():
                        "titleFontSize": 11, "orient": "bottom", "symbolType": "circle"},
             "background": "transparent",
         }}
-    alt.themes.register("ferrovane", _t)
-    alt.themes.enable("ferrovane")
+    alt.themes.register("cross_border_fx", _t)
+    alt.themes.enable("cross_border_fx")
 
 
 def pair_scale():

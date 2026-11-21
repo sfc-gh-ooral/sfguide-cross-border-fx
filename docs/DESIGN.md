@@ -1,10 +1,10 @@
-# Design: Ferrovane Corridor Desk
+# Design: Cross-Border & FX
 
 The v2 app and guide share one fictional brand. This file is the source of truth for colors, type and layout; the Streamlit theme (`app/.streamlit/config.toml`), the app stylesheet (`app/brand.py`), the hosted example (`docs/try/`) and the landing page (`docs/index.html`) all take their tokens from here.
 
 ## Brand
 
-- **Name:** Ferrovane Corridor Desk. A cross-border and FX workspace for the treasury and FX desk of a fictional payments processor. "Ferrovane" is a coined name; a web search found no firm using it.
+- **Name:** Cross-Border & FX. A cross-border and FX workspace for the treasury and FX desk of a fictional payments processor. The app carries the product name only, with no fictional company brand.
 - **Audience:** heads of FX and treasury, corridor managers and payments finance analysts. They read basis points, currency pairs and month-end numbers every day.
 - **Voice:** a desk, not a dashboard. Short, numeric, calm. Labels use the trade's words (corridor, pair, margin in bps, FX P&L). Every number says its unit. AI text is called a "desk note" and always shows where its numbers came from.
 - **Logo mark:** a weather vane whose arrow is a corridor arc, drawn as one stroke.
@@ -80,7 +80,7 @@ Dark mode: the landing page follows `prefers-color-scheme` (canvas `#0C1916`, su
 
 Compared with live catalog packs (landing pages and Try apps checked on 2026-11-20):
 
-| Pack | Its look | What Ferrovane avoids |
+| Pack | Its look | What this pack avoids |
 |---|---|---|
 | Auto Finance Portfolio Analytics | Night navy with lime, mono type | No lime, no navy-black, mono only for figures |
 | Workforce Intelligence | Cream paper, plum, serif headings | No cream or serif; cool mist canvas, grotesk type |

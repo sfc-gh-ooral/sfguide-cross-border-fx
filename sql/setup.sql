@@ -1,5 +1,5 @@
 -- ============================================================================
--- Cross-Border & FX (Ferrovane Corridor Desk) - sql/setup.sql
+-- Cross-Border & FX - sql/setup.sql
 -- ----------------------------------------------------------------------------
 -- Cross-border settlement volume, FX margin (bps) and FX P&L by corridor for
 -- the FX & treasury desk of a fictional payments processor.
@@ -551,6 +551,6 @@ CREATE OR REPLACE AGENT CROSS_BORDER_AGENT
 -- Upload app/ to this stage (README, "Deploy the app in Snowflake"), then run
 -- the CREATE STREAMLIT statement shown there.
 CREATE STAGE IF NOT EXISTS APP_STAGE DIRECTORY = (ENABLE = TRUE)
-  COMMENT = 'Source files for the Ferrovane Corridor Desk Streamlit app';
+  COMMENT = 'Source files for the Cross-Border & FX Streamlit app';
 
 SELECT COUNT(*) AS corridor_months FROM CROSS_BORDER_BENCHMARK;

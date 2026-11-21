@@ -2,7 +2,7 @@
 
 **Know which corridors earn their volume, every month-end.** A Snowflake example for the FX and treasury desk of a payments processor: settlement volume, FX margin (bps) and FX P&L by corridor in one app, plus AI desk notes that Cortex `AI_COMPLETE` drafts from a fact pack of allowed numbers and a second `AI_COMPLETE` pass fact-checks before anyone reads them.
 
-The app is branded as **Ferrovane Corridor Desk**, a fictional processor's FX desk. All data is synthetic.
+The app is branded as **Cross-Border & FX**, for a fictional processor's FX desk. All data is synthetic.
 
 - Guide: https://sfc-gh-jsoliz.github.io/sfguide-cross-border-fx/
 - Try it with no account: https://sfc-gh-jsoliz.github.io/sfguide-cross-border-fx/try/
@@ -62,14 +62,14 @@ The app opens in Sample mode at http://localhost:8501. Or open the hosted exampl
      ```
 
      The app connects as `CROSS_BORDER_FX_ROLE` on `SNOWPACK_CROSS_BORDER_FX_WH` (override with `SNOWFLAKE_ROLE` / `SNOWFLAKE_WAREHOUSE`) and opens in Live mode. Credentials stay in your shell; the app never asks for them.
-   - **As Streamlit in Snowflake.** Upload the contents of `app/` (keeping `views/`, `sample/`, `static/` and `.streamlit/`) to `@SNOWPACK_CROSS_BORDER_FX.CORE.APP_STAGE/ferrovane` in Snowsight, then run as `CROSS_BORDER_FX_ROLE`:
+   - **As Streamlit in Snowflake.** Upload the contents of `app/` (keeping `views/`, `sample/`, `static/` and `.streamlit/`) to `@SNOWPACK_CROSS_BORDER_FX.CORE.APP_STAGE/cross_border_fx` in Snowsight, then run as `CROSS_BORDER_FX_ROLE`:
 
      ```sql
-     CREATE OR REPLACE STREAMLIT SNOWPACK_CROSS_BORDER_FX.CORE.FERROVANE_CORRIDOR_DESK
-       FROM '@SNOWPACK_CROSS_BORDER_FX.CORE.APP_STAGE/ferrovane'
+     CREATE OR REPLACE STREAMLIT SNOWPACK_CROSS_BORDER_FX.CORE.CROSS_BORDER_FX
+       FROM '@SNOWPACK_CROSS_BORDER_FX.CORE.APP_STAGE/cross_border_fx'
        MAIN_FILE = 'streamlit_app.py'
        QUERY_WAREHOUSE = SNOWPACK_CROSS_BORDER_FX_WH
-       TITLE = 'Ferrovane Corridor Desk';
+       TITLE = 'Cross-Border & FX';
      ```
 
      Inside Snowflake the app uses its own session and opens in Live mode.
@@ -92,7 +92,7 @@ The app opens in Sample mode at http://localhost:8501. Or open the hosted exampl
 | `CROSS_BORDER_AGENT` | Cortex Agent | Cortex Analyst tool over `CROSS_BORDER_SV` |
 | `CROSS_BORDER_REPORTS` | Table | Desk notes with verdict, flags, fact pack, model and latency |
 | `APP_STAGE` | Stage | Source files for the Streamlit in Snowflake app |
-| `FERROVANE_CORRIDOR_DESK` | Streamlit app | Only if you deploy it (step 2) |
+| `CROSS_BORDER_FX` | Streamlit app | Only if you deploy it (step 2) |
 
 ## Cost and time
 

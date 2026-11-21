@@ -1,4 +1,4 @@
-/* Ferrovane Corridor Desk: hosted no-account example. Same data and logic as the
+/* Cross-Border & FX: hosted no-account example. Same data and logic as the
    Streamlit app's Sample mode (app/data.py). Always Sample mode; AI answers were
    captured from Live runs and are labeled "Sample AI response". No dependencies. */
 (function () {

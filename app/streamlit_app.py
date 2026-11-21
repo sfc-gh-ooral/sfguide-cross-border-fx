@@ -1,4 +1,4 @@
-"""Ferrovane Corridor Desk - Cross-Border & FX on Snowflake.
+"""Cross-Border & FX on Snowflake.
 
 Run locally (Sample mode, no account):   streamlit run app/streamlit_app.py
 Live mode locally: set SNOWFLAKE_ACCOUNT, SNOWFLAKE_USER and SNOWFLAKE_PRIVATE_KEY_PATH
@@ -15,7 +15,7 @@ import brand  # noqa: E402
 import data  # noqa: E402
 from views import ask, corridors, desk, fx_margin, notes  # noqa: E402
 
-st.set_page_config(page_title="Ferrovane Corridor Desk · Cross-Border & FX", page_icon="🧭", layout="wide",
+st.set_page_config(page_title="Cross-Border & FX", page_icon="🧭", layout="wide",
                    initial_sidebar_state="collapsed")
 st.markdown(brand.CSS, unsafe_allow_html=True)
 
@@ -35,7 +35,7 @@ with st.container(key="topbar"):
     c1, c2, c3 = st.columns([4.2, 2, 4], vertical_alignment="center")
     with c1:
         st.html(
-        f'<div class="fv-brand">{brand.LOGO_IMG}<div><b>Ferrovane Corridor Desk</b>'
+        f'<div class="fv-brand">{brand.LOGO_IMG}<div><b>Cross-Border &amp; FX</b>'
         '<span>Cross-border volume, FX margin and FX P&amp;L · treasury &amp; FX desk</span></div></div>')
     with c2:
         st.segmented_control("Data mode", ["Sample", "Live"], key="mode", label_visibility="collapsed",
